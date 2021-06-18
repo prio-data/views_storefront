@@ -1,0 +1,9 @@
+*.py[cod]
+__pycache__/
+.vim/
+venv/
+.mypy_cache/
+
+.env
+*.sqlite
+testing/
