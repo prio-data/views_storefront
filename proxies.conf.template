@@ -2,4 +2,7 @@ server {
    location /queryset/ {
       proxy_pass ${QUERYSET_MANAGER_URL}/;
    }
+   location /doc/ {
+      proxy_pass ${DOCS_URL}/;
+   }
 }
