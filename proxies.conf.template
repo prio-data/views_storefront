@@ -5,6 +5,6 @@ server {
       proxy_pass ${QUERYSET_MANAGER_URL}/;
    }
    location /docs/ {
-      proxy_pass ${DOCS_URL}/;
+      proxy_pass ${DOCS_URL}/docs/;
    }
 }
