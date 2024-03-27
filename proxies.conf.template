@@ -7,11 +7,14 @@ server {
    location /queryset/ {
       proxy_pass ${DATA_SERVICE_URL}/queryset/;
    }
-   location /tables/ {
-      proxy_pass ${DATA_SERVICE_URL}/tables/;
-   }
    location /transforms/ {
       proxy_pass ${DATA_SERVICE_URL}/transforms/;
+   }
+   location /transform/ {
+      proxy_pass ${DATA_SERVICE_URL}/transform/;
+   }
+   location /features/ {
+      proxy_pass ${DATA_SERVICE_URL}/features/;
    }
 
 }
